@@ -1,0 +1,16 @@
+.top-bar {
+    background-color: black;
+}
+.content {
+    background-color: yellow;
+}
+.page {
+    padding: 20px;
+    background-color: black;
+}
+.current {
+    background-color: darkslategray;
+}
+.page:hover {
+    background-color: lightslategrey;
+}
