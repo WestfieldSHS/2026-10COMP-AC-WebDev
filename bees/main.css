@@ -1,12 +1,19 @@
 .top-bar {
     background-color: black;
+    line-height: 1;
+    padding: 25px;
 }
 .content {
     background-color: yellow;
+    padding: 50px;
 }
 .page {
     padding: 20px;
     background-color: black;
+    color: white;
+    text-decoration: none;
+    line-height: 1;
+    font-size: 20px;
 }
 .current {
     background-color: darkslategray;
