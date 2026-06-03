@@ -1,11 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice");
+@import url("https://fonts.googleapis.com/css2?family=Nabla");
+
+body {
+    background-color: yellow;
+}
 .top-bar {
     background-color: black;
     line-height: 1;
-    padding: 25px;
+    padding: 30px;
+    margin: 0;
 }
 .content {
-    background-color: yellow;
-    padding: 50px;
+    padding: 20px 50px;
+    margin: 0;
 }
 .page {
     padding: 20px;
@@ -14,10 +21,32 @@
     text-decoration: none;
     line-height: 1;
     font-size: 20px;
+    text-align: top;
+    border-radius: 10px;
+    margin: 0 5px;
 }
 .current {
     background-color: darkslategray;
 }
 .page:hover {
     background-color: lightslategrey;
+}
+.beeter {
+    display: inline-block;
+    background-color: yellow;
+    border-radius: 5px;
+    height: 50px;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+h1 {
+    background-color: gold;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 3px solid goldenrod;
+    font-family: "Bungee Spice";
+}
+.footer {
+    background-color: black;
+    margin: 0;
 }
