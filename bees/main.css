@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice");
 @import url("https://fonts.googleapis.com/css2?family=Nabla");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script");
+@import url("https://fonts.googleapis.com/css2?family=Changa+One");
 
 body {
     background-color: yellow;
@@ -9,6 +11,7 @@ body {
     line-height: 1;
     padding: 30px;
     margin: 0;
+    font-family: 'Dancing Script';
 }
 .content {
     padding: 20px 50px;
@@ -32,12 +35,9 @@ body {
     background-color: lightslategrey;
 }
 .beeter {
-    display: inline-block;
     background-color: yellow;
     border-radius: 5px;
     height: 50px;
-    vertical-align: bottom;
-    margin-right: 10px;
 }
 h1 {
     background-color: gold;
@@ -49,4 +49,11 @@ h1 {
 .footer {
     background-color: black;
     margin: 0;
+}
+.bee {
+    width: 100%;/* sabotage >:DD hee hee*/
+    border-radius: 20px;
+}
+h2 {
+    font-family: 'Changa One';
 }
