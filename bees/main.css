@@ -15,7 +15,6 @@ body {
 }
 .content {
     padding: 20px 50px;
-    margin: 0;
 }
 .page {
     padding: 20px;
@@ -56,4 +55,16 @@ h1 {
 }
 h2 {
     font-family: 'Changa One';
+    color: orange;
+}
+.comb {
+    width: 15%;
+    border-radius: 10px;
+    vertical-align: middle;
+    margin: 1% 2% 1% 2%;
+}
+.side {
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
 }
