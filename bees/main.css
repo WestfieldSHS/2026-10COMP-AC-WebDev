@@ -1,20 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Inline");
-@import url("https://fonts.googleapis.com/css2?family=Nabla");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script");
 @import url("https://fonts.googleapis.com/css2?family=Changa+One");
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
 
 body {
     background-color: black;
 }
 .top-bar {
     background-color: yellow;
-    line-height: 1;
-    padding: 30px;
-    margin: 0;
+    line-height: 4.5;
+    padding: 5px 23%;
     font-family: 'Dancing Script';
 }
 .content {
+    margin: 0 20%;
     padding: 20px 50px;
+    font-family: 'Varela Round';
 }
 .page {
     padding: 20px;
@@ -29,6 +31,7 @@ body {
 }
 .current {
     background-color: gold;
+    font-weight: bold;
 }
 .page:hover {
     background-color: goldenrod;
@@ -47,7 +50,9 @@ h1 {
     color: white;
 }
 .footer {
+    padding: 0 23%;
     background-color: yellow;
+    font-family: 'Roboto';
 }
 .bee {
     width: 100%;
@@ -73,22 +78,15 @@ h2 {
 .content {
     color: white;
 }
+.heel, .ball{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    line-height: 1.25;
+}
 .toe {
-    width: 14%;
-    margin: 0 5%;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-}
-.heel {
-    text-align: center;
-    margin-top: 20px;
-    display: inline-block;
-    width: 100%;
-    font-size: 20px;
-}
-.floor {
     display: block;
-    padding: 5px;
-    text-align: center;
+    width: 100%;
+    margin: 5px 0;
+    color: black;
 }
