@@ -8,13 +8,17 @@ body {
     background-color: black;
 }
 .top-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
     background-color: yellow;
     line-height: 4.5;
-    padding: 5px 23%;
+    padding: 5px 20%;
     font-family: 'Dancing Script';
 }
 .content {
-    margin: 0 20%;
+    margin: 70px 17% 0 17%;
     padding: 20px 50px;
     font-family: 'Varela Round';
 }
@@ -39,7 +43,7 @@ body {
 .beeter {
     background-color: yellow;
     border-radius: 5px;
-    height: 50px;
+    width: 100%;
 }
 h1 {
     background-color: darkslategrey;
@@ -50,7 +54,7 @@ h1 {
     color: white;
 }
 .footer {
-    padding: 0 23%;
+    padding: 0 20%;
     background-color: yellow;
     font-family: 'Roboto';
 }
@@ -78,15 +82,24 @@ h2 {
 .content {
     color: white;
 }
+.ankle {
+    display: inline-block;
+    width: 12%;
+}
 .heel, .ball{
     display: inline-block;
-    width: 49%;
+    width: 60%;
     vertical-align: top;
     line-height: 1.25;
 }
+.ball {
+    margin-left: 3%;
+    width: 24%;
+}
 .toe {
-    display: block;
-    width: 100%;
-    margin: 5px 0;
+    margin: 0 0px;
     color: black;
+}
+.toe:hover {
+    text-decoration: none;
 }
