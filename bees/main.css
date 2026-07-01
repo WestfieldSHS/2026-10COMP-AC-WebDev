@@ -8,17 +8,17 @@ body {
     background-color: black;
 }
 .top-bar {
-    position: fixed;
+    /*position: fixed;
     left: 0;
     right: 0;
-    top: 0;
+    top: 0;*/
     background-color: yellow;
     line-height: 4.5;
     padding: 5px 20%;
     font-family: 'Dancing Script';
 }
 .content {
-    margin: 70px 17% 0 17%;
+    margin: /*7*/0px 17% 0 17%;
     padding: 20px 50px;
     font-family: 'Varela Round';
 }
@@ -54,7 +54,7 @@ h1 {
     color: white;
 }
 .footer {
-    padding: 0 20%;
+    padding: 0 20% 0 19%;
     background-color: yellow;
     font-family: 'Roboto';
 }
@@ -70,6 +70,7 @@ h2 {
 .comb {
     width: 15%;
     max-width: 259px;
+    min-width: 80px;
     border-radius: 10px;
     vertical-align: middle;
     margin: 1% 2% 1% 2%;
@@ -93,11 +94,10 @@ h2 {
     line-height: 1.25;
 }
 .ball {
-    margin-left: 3%;
-    width: 24%;
+    margin-left: 5%;
+    width: 0;
 }
 .toe {
-    margin: 0 0px;
     color: black;
 }
 .toe:hover {
