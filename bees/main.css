@@ -4,15 +4,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Changa+One");
 @import url("https://fonts.googleapis.com/css2?family=Roboto");
 
+:root {
+    --primary-bg: black;
+    --secondary-bg: darkslategrey;
+    --tertiary-bg: lightslategrey;
+    --main-text: white;
+    --subheading-text: grey;
+    --primary-accent: yellow;
+    --secondary-accent: gold;
+    --tertiary-accent: goldenrod;
+}
 body {
-    background-color: black;
+    background-color: var(--primary-bg, black);
 }
 .top-bar {
     /*position: fixed;
     left: 0;
     right: 0;
     top: 0;*/
-    background-color: yellow;
+    background-color: var(--primary-accent, yellow);
     line-height: 4.5;
     padding: 5px 20%;
     font-family: 'Dancing Script';
@@ -24,8 +34,8 @@ body {
 }
 .page {
     padding: 20px;
-    background-color: yellow;
-    color: black;
+    background-color: var(--primary-accent, yellow);
+    color: var(--priamry-bg, black);
     text-decoration: none;
     line-height: 1;
     font-size: 20px;
@@ -34,11 +44,11 @@ body {
     margin: 0 5px;
 }
 .current {
-    background-color: gold;
+    background-color: var(--secondary-accent, gold);
     font-weight: bold;
 }
 .page:hover {
-    background-color: goldenrod;
+    background-color: var(--tertiary-accent, goldenrod);
 }
 .beeter {
     background-color: yellow;
@@ -46,16 +56,16 @@ body {
     width: 100%;
 }
 h1 {
-    background-color: darkslategrey;
+    background-color: var(--secondary-bg, darkslategrey);
     padding: 5px 15px;
     border-radius: 5px;
-    border: 3px solid lightslategrey;
+    border: 3px solid var(--tertiary-bg, lightslategrey);
     font-family: "Bungee Inline";
-    color: white;
+    color: var(--main-text, white);
 }
 .footer {
     padding: 0 20% 0 19%;
-    background-color: yellow;
+    background-color: var(--primary-accent, yellow);
     font-family: 'Roboto';
 }
 .bee {
@@ -65,7 +75,7 @@ h1 {
 }
 h2 {
     font-family: 'Changa One';
-    color: grey;
+    color: var(--subheading-text, grey);
 }
 .comb {
     width: 15%;
@@ -81,7 +91,7 @@ h2 {
     vertical-align: middle;
 }
 .content {
-    color: white;
+    color: var(--main-text, white);
 }
 .ankle {
     display: inline-block;
@@ -98,8 +108,14 @@ h2 {
     width: 0;
 }
 .toe {
-    color: black;
+    color: var(--primary-bg, black);
 }
 .toe:hover {
     text-decoration: none;
+}
+.tricolumn {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1%;
 }
