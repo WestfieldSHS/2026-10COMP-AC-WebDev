@@ -32,6 +32,18 @@ body {
     padding: 20px 50px;
     font-family: 'Varela Round';
 }
+.click {
+    display: inline-block;
+    width: 60px;
+    border: 5px solid red;
+    padding: 0;
+}
+.logo {
+    margin: 0;
+    width: 50%;
+    vertical-align: bottom;
+    border: 5px solid orange;
+}
 .page {
     padding: 20px;
     background-color: var(--primary-accent, yellow);
