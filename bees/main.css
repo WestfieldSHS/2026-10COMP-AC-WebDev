@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto");
 
 :root {
+    --theme: dark;
     --primary-bg: black;
     --secondary-bg: darkslategrey;
     --tertiary-bg: lightslategrey;
@@ -14,21 +15,22 @@
     --secondary-accent: gold;
     --tertiary-accent: goldenrod;
 }
+/*do thingy*/
 body {
     background-color: var(--primary-bg, black);
 }
 .top-bar {
-    /*position: fixed;
+    position: fixed;
     left: 0;
     right: 0;
-    top: 0;*/
+    top: 0;
     background-color: var(--primary-accent, yellow);
     line-height: 4.5;
     padding: 5px 20%;
     font-family: 'Dancing Script';
 }
 .content {
-    margin: /*7*/0px 17% 0 17%;
+    margin: 70px 17% 0 17%;
     padding: 20px 50px;
     font-family: 'Varela Round';
 }
@@ -50,7 +52,7 @@ body {
     display: inline-block;
     line-height: 1;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 200px;
     font-weight: bold;
     font-size: 17px;
 }
@@ -142,4 +144,20 @@ h3 {
     width: 30%;
     vertical-align: top;
     padding: 1%;
+}
+p {
+    line-height: 1.3;
+}
+.dark {
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    border: 0;
+    vertical-align: middle;
+    position: fixed;
+    right: 20%;
+    top: 13px;
+}
+.icon {
+    width: 100%;
 }
