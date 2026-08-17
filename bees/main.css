@@ -18,6 +18,9 @@
     --primary-accent: yellow;
     --secondary-accent: gold;
     --tertiary-accent: goldenrod;
+
+    --fstyle: italic;
+    --bob: middle;
 }
 [theme="light"] {
     --theme: light;
@@ -51,14 +54,14 @@ body {
     padding: 20px 50px;
     font-family: 'Varela Round';
 }
+.both {
+    display: inline-block;
+}
 .container {
     display: inline-block;
     width: 60px;
-    vertical-align: middle;
+    vertical-align: var(--bob, middle);
     border-radius: 10px;
-}
-.container:hover {
-    vertical-align: top;
 }
 .logo {
     width: 100%;
@@ -72,9 +75,7 @@ body {
     margin-right: 170px;
     font-weight: bold;
     font-size: 17px;
-}
-.name:hover {
-    font-style: italic;
+    font-style: var(--fstyle, normal);
 }
 .page {
     padding: 20px;
