@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Inline");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice");
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script");
 @import url("https://fonts.googleapis.com/css2?family=Changa+One");
@@ -10,12 +11,28 @@
     --secondary-bg: darkslategrey;
     --tertiary-bg: lightslategrey;
     --main-text: white;
+    --heading-text: white;
+    --heading-font: 'Bungee Inline';
     --subheading-text: grey;
+    --accent-text: black;
     --primary-accent: yellow;
     --secondary-accent: gold;
     --tertiary-accent: goldenrod;
 }
-/*do thingy*/
+[theme="light"] {
+    --theme: light;
+    --primary-bg: yellow;
+    --secondary-bg: gold;
+    --tertiary-bg: goldenrod;
+    --main-text: black;
+    --heading-text: darkorange;
+    --heading-font: 'Bungee Spice';
+    --subheading-text: darkorange;
+    --accent-text: white;
+    --primary-accent: black;
+    --secondary-accent: darkslategrey;
+    --tertiary-accent: lightslategrey;
+}
 body {
     background-color: var(--primary-bg, black);
 }
@@ -47,12 +64,12 @@ body {
     width: 100%;
 }
 .name {
-    color: black;
+    color: var(--accent-text, black);
     text-decoration: none;
     display: inline-block;
     line-height: 1;
     vertical-align: middle;
-    margin-right: 200px;
+    margin-right: 170px;
     font-weight: bold;
     font-size: 17px;
 }
@@ -62,7 +79,7 @@ body {
 .page {
     padding: 20px;
     background-color: var(--primary-accent, yellow);
-    color: var(--priamry-bg, black);
+    color: var(--accent-text, black);
     text-decoration: none;
     line-height: 1;
     font-size: 20px;
@@ -77,8 +94,6 @@ body {
     background-color: var(--tertiary-accent, goldenrod);
 }
 .beeter {
-    background-color: yellow;
-    border-radius: 5px;
     width: 100%;
 }
 h2 {
@@ -86,8 +101,8 @@ h2 {
     padding: 5px 15px;
     border-radius: 5px;
     border: 3px solid var(--tertiary-bg, lightslategrey);
-    font-family: "Bungee Inline";
-    color: var(--main-text, white);
+    font-family: var(--heading-font, "Bungee Inline");
+    color: var(--heading-text, white);
 }
 .footer {
     padding: 0 20% 0 19%;
@@ -128,13 +143,14 @@ h3 {
     width: 60%;
     vertical-align: top;
     line-height: 1.25;
+    color: var(--accent-text, black)
 }
 .ball {
     margin-left: 5%;
     width: 0;
 }
 .toe {
-    color: var(--primary-bg, black);
+    color: var(--accent-text, black)
 }
 .toe:hover {
     text-decoration: none;
@@ -146,7 +162,7 @@ h3 {
     padding: 1%;
 }
 p {
-    line-height: 1.3;
+    line-height: 1.5;
 }
 .dark {
     background-color: transparent;
