@@ -5,7 +5,7 @@
     </head>
     <body>
         <div class="top-bar">
-            <div class="both" id="logo"><a class="container" href="index.html"><img class="logo" src="images/beeter.png" alt="A simple bee logo."></a>
+            <div class="both current" id="logo"><a class="container" href="index.html"><img class="logo" src="images/beeter.png" alt="A simple bee logo."></a>
             <a class="name" href="index.html"><p>Guide<br>to Bees</p></a></div>
             <a class="page" href="combs.html">Products</a>
             <a class="page" href="plants.html">Pollination</a>
@@ -37,12 +37,22 @@
         </div>
         <script>
             var r = document.querySelector(':root');
+            const userTheme = localStorage.getItem('theme');
             const btn = document.getElementById("switch");
             const logo = document.getElementById("logo");
+            
             btn.addEventListener("click", function () {
-                document.documentElement.setAttribute('theme', 'light');
-                sunmoon.src='images/sun.png';
+                if (document.documentElement.classList.contains('light-theme')) {
+                    localStorage.setItem('theme', 'dark');
+                    document.documentElement.removeAttribute('theme', 'light');
+                    sunmoon.src='images/moon.png';
+                } else {
+                    localStorage.setItem('theme', 'light');
+                    document.documentElement.setAttribute('theme', 'light');
+                    sunmoon.src='images/sun.png';
+                }
             });
+            
             logo.addEventListener("mouseover", function () {
                 r.style.setProperty('--bob', 'top');
                 r.style.setProperty('--fstyle', 'italic');
