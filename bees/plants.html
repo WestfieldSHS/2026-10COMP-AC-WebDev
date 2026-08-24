@@ -1,4 +1,4 @@
-<html>
+<html lang="en" dir="ltr" style="touch-action: pan-y; scroll-behavior: auto;">
     <head>
         <title>Pollination</title>
         <link rel="stylesheet" href="main.css">
@@ -19,7 +19,7 @@
         </div>
         <div class="footer">
             <div class="ankle">
-                <img class="beeter" src="images/beeter.png" alt="A bee logo.">
+                <img class="beeter" src="images/beeter.png" alt="A simple bee logo.">
             </div>
             <div class="heel">
                 <p><strong>Guide to Bees</strong><br>
@@ -34,5 +34,43 @@
                 <a class="toe" href="humans.html">Farming</a></p>
             </div>
         </div>
+        <script>
+            var r = document.querySelector(':root');
+            const userTheme = localStorage.getItem('theme');
+            const btn = document.getElementById("switch");
+            const logo = document.getElementById("logo");
+            const sunmoon = document.getElementById("sunmoon");
+            const root = document.documentElement;
+            const savedTheme = localStorage.getItem('theme');
+
+            if (savedTheme === 'light') {
+                root.setAttribute('theme', 'light');
+                sunmoon.src = 'images/sun.png';
+            } else {
+                root.removeAttribute('theme');
+                sunmoon.src = 'images/moon.png';
+            }
+            
+            btn.addEventListener("click", function () {
+                if (root.getAttribute('theme') === 'light') {
+                    localStorage.setItem('theme', 'dark');
+                    root.removeAttribute('theme');
+                    sunmoon.src = 'images/moon.png';
+                } else {
+                    localStorage.setItem('theme', 'light');
+                    root.setAttribute('theme', 'light');
+                    sunmoon.src='images/sun.png';
+                }
+            });
+            
+            logo.addEventListener("mouseover", function () {
+                r.style.setProperty('--bob', 'top');
+                r.style.setProperty('--fstyle', 'italic');
+            });
+            logo.addEventListener("mouseout", function () {
+                r.style.setProperty('--bob', 'middle');
+                r.style.setProperty('--fstyle', 'normal');
+            });
+        </script>
     </body>
 </html>

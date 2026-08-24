@@ -22,7 +22,7 @@
     --fstyle: normal;
     --bob: middle;
 }
-[theme='light'] {
+html[theme='light'] {
     --theme: light;
     --primary-bg: yellow;
     --secondary-bg: gold;
@@ -112,7 +112,7 @@ h2 {
     background-color: var(--primary-accent, yellow);
     font-family: 'Roboto';
 }
-.bee {
+.picture {
     width: 100%;
     border-radius: 20px;
     max-width: 1600px;
@@ -163,6 +163,15 @@ h3 {
     width: 30%;
     vertical-align: top;
     padding: 1%;
+}
+.a {
+    width: 47%;
+}
+.b {
+    width: 19%;
+}
+.c {
+    width: 27%;
 }
 p {
     line-height: 1.5;
