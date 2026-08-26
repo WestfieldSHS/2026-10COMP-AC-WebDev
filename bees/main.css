@@ -38,6 +38,8 @@ html[theme='light'] {
 }
 body {
     background-color: var(--primary-bg, black);
+    margin: 0;
+    padding: 0;
 }
 .top-bar {
     position: fixed;
@@ -57,7 +59,7 @@ body {
 .both {
     display: inline-block;
     margin-right: 155px;
-    border-radius: 20px;
+    border-radius: 10px;
     padding-right: 15px;
 }
 .container {
@@ -107,10 +109,13 @@ h2 {
     font-family: var(--heading-font, "Bungee Inline");
     color: var(--heading-text, white);
 }
-.footer {
+footer {
     padding: 0 20% 0 19%;
     background-color: var(--primary-accent, yellow);
     font-family: 'Roboto';
+    /*display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;*/
 }
 .picture {
     width: 100%;
@@ -146,14 +151,15 @@ h3 {
     width: 60%;
     vertical-align: top;
     line-height: 1.25;
+    font-size: 15px;
     color: var(--accent-text, black)
 }
 .ball {
-    margin-left: 5%;
+    margin-left: 15%;
     width: 0;
 }
 .toe {
-    color: var(--accent-text, black)
+    color: var(--accent-text, black);
 }
 .toe:hover {
     text-decoration: none;
