@@ -41,7 +41,7 @@ body {
     margin: 0;
     padding: 0;
 }
-.top-bar {
+header {
     position: fixed;
     left: 0;
     right: 0;
@@ -51,10 +51,11 @@ body {
     padding: 5px 20%;
     font-family: 'Dancing Script';
 }
-.content {
+main {
     margin: 75px 17% 0 17%;
     padding: 20px 50px;
     font-family: 'Varela Round';
+    color: var(--main-text, white);
 }
 .both {
     display: inline-block;
@@ -114,9 +115,8 @@ footer {
     padding: 0 20% 0 19%;
     background-color: var(--primary-accent, yellow);
     font-family: 'Roboto';
-    /*display: flex;
+    display: flex;
     box-sizing: border-box;
-    justify-content: space-between;*/
 }
 .picture {
     width: 100%;
@@ -141,9 +141,6 @@ h2 {
     width: 80%;
     vertical-align: middle;
 }
-.content {
-    color: var(--main-text, white);
-}
 .ankle {
     display: inline-block;
     width: 12%;
@@ -166,7 +163,14 @@ h2 {
 .toe:hover {
     text-decoration: none;
 }
-.tricolumn {
+nav {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+section {
     display: inline-block;
     width: 30%;
     vertical-align: top;
@@ -181,7 +185,7 @@ h2 {
 .c {
     width: 27%;
 }
-p {
+p, nav {
     line-height: 1.5;
 }
 .dark {
