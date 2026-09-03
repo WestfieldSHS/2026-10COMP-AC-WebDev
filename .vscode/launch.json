@@ -5,12 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type":"chrome",//school computor
-            //"type": "msedge",//home laptop
+            //"type":"chrome",//school computor
+            "type": "msedge",//home laptop
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///C:/Users/aaron.chan21/OneDrive%20-%20NSW%20Department%20of%20Education/10COMP/FA2-WebDev/2026-10COMP-AC-WebDev/bees/index.html",//school computor
-            //"url": "file:///C:/Users/grayb/OneDrive%20-%20NSW%20Department%20of%20Education/10COMP/FA2-WebDev/2026-10COMP-AC-WebDev/bees/index.html",//home laptop
+            //"url": "file:///C:/Users/aaron.chan21/OneDrive%20-%20NSW%20Department%20of%20Education/10COMP/FA2-WebDev/2026-10COMP-AC-WebDev/bees/index.html",//school computor
+            "url": "file:///C:/Users/grayb/OneDrive%20-%20NSW%20Department%20of%20Education/10COMP/FA2-WebDev/2026-10COMP-AC-WebDev/bees/index.html",//home laptop
             "webRoot": "${workspaceFolder}"
         }
     ]

@@ -36,6 +36,10 @@ html[theme='light'] {
     --secondary-accent: darkslategrey;
     --tertiary-accent: lightslategrey;
 }
+html {
+    touch-action: pan-y;
+    scroll-behavior: auto;
+}
 body {
     background-color: var(--primary-bg, black);
     margin: 0;
@@ -200,4 +204,28 @@ p, nav {
 }
 .icon {
     width: 100%;
+}
+details {
+    background-color: var(--secondary-bg, darkslategrey);
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+}
+summary {
+    background-color: var(--tertiary-bg, lightslategrey);
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-weight: bold;
+    color: black;
+}
+.sub-detail {
+    margin-left: 20px;
+}
+li {
+    line-height: 1.25;
+}
+.embedded {
+    display: block;
+    width: 50%;/* change this */
+    margin: 5px 0;
 }
