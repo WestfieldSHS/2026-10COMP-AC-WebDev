@@ -52,7 +52,7 @@ header {
     top: 0;
     background-color: var(--primary-accent, yellow);
     line-height: 4.5;
-    padding: 5px 20%;
+    padding: 0px 20%;
     font-family: 'Dancing Script';
 }
 main {
@@ -64,8 +64,10 @@ main {
 .both {
     display: inline-block;
     margin-right: 155px;
-    border-radius: 10px;
     padding-right: 15px;
+    text-decoration: none;
+    border: 5px solid var(--primary-accent, yellow);
+    border-bottom: 7px solid var(--primary-accent, yellow);
 }
 .container {
     display: inline-block;
@@ -86,22 +88,23 @@ main {
     font-style: var(--fstyle, normal);
 }
 .page {
-    padding: 20px;
+    padding: 28px 20px;
     background-color: var(--primary-accent, yellow);
     color: var(--accent-text, black);
     text-decoration: none;
     line-height: 1;
-    font-size: 20px;
-    border-radius: 10px;
+    font-size: 25px;
     margin: 0 5px;
     vertical-align: middle;
+    border: 5px solid var(--primary-accent, yellow);
+    border-bottom: 7px solid var(--primary-accent, yellow);
 }
 .current {
-    background-color: var(--secondary-accent, gold);
     font-weight: bold;
+    border-bottom: 7px solid var(--tertiary-accent, goldenrod);
 }
-.page:hover {
-    background-color: var(--tertiary-accent, goldenrod);
+.page:hover, .both:hover {
+    border-bottom: 7px solid var(--secondary-accent, gold);
 }
 .beeter {
     width: 100%;
