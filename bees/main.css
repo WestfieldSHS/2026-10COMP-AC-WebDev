@@ -44,6 +44,8 @@ body {
     background-color: var(--primary-bg, black);
     margin: 0;
     padding: 0;
+    background-image: url(images/flyingbee.gif);
+    background-size: contain;
 }
 header {
     position: fixed;
