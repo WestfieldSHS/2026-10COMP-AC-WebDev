@@ -12,7 +12,7 @@
             <a class="page current" href="plants.html">Pollination</a>
             <a class="page" href="behaviour.html">Behaviour</a>
             <a class="page" href="humans.html">Farming</a>
-            <button type="button" class="dark" id="switch"><img class="icon" id="sunmoon" src="images/moon.png"></button>
+            <button type="button" class="dark" id="switch"><img class="icon" id="sunmoon" src="images/moon.png" alt="A moon icon, indicating that the current theme is dark."></button>
         </header>
         <main>
             <h1>Pollination</h1>
@@ -69,9 +69,11 @@
             if (savedTheme === 'light') {
                 root.setAttribute('theme', 'light');
                 sunmoon.src = 'images/sun.png';
+                sunmoon.alt = 'A sun icon, indicating that the current theme is light.';
             } else {
                 root.removeAttribute('theme');
                 sunmoon.src = 'images/moon.png';
+                sunmoon.alt = 'A moon icon, indicating that the current theme is dark.';
             }
             
             btn.addEventListener("click", function () {
@@ -79,10 +81,12 @@
                     localStorage.setItem('theme', 'dark');
                     root.removeAttribute('theme');
                     sunmoon.src = 'images/moon.png';
+                    sunmoon.alt = 'A moon icon, indicating that the current theme is dark.';
                 } else {
                     localStorage.setItem('theme', 'light');
                     root.setAttribute('theme', 'light');
                     sunmoon.src='images/sun.png';
+                    sunmoon.alt = 'A sun icon, indicating that the current theme is light.';
                 }
             });
             

@@ -211,6 +211,7 @@ p, nav {
 }
 .icon {
     width: 100%;
+    color: var(--accent-text, black);
 }
 details {
     background-color: var(--secondary-bg, darkslategrey);
